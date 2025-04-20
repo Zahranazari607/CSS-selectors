@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Portofolio</title>
+    <style>
+        /* استایل بادی صفحه */
+        body {
+            margin: 0;
+            background: linear-gradient(134deg, #0f0c29, #302b63, #24243e);
+            font-family: 'Segoe UI', sans-serif;
+            color:#f8fafc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+        /* استایل برای دیو */
+        .card {
+            background: #1e293b;
+            border-radius: 24px;
+            padding: 32px;
+            max-width: 400px;
+            width: 90%;
+            box-shadow: 0 0 25px rgba(99, 102, 241, 0.6);
+            text-align: center;
+            position: relative;
+            animation: fadeIn 2s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .card h2 {
+            font-size: 32px;
+            color: #a5b4fc;
+        }
+        .card p {
+            margin: 6px 0;
+            font-size: 15px;
+        }
+        .highlight {
+            color: #facc15;
+            font-weight: bold;
+        }
+        .button {
+            display: inline-block;
+            margin-top: 16px;
+            padding: 10px 20px;
+            background: #6366f1;
+            color: #fff;
+            text-decoration: wavy;
+            border-radius: 999px;
+            font-weight: bold;
+            transition: 0.2s ease;
+            box-shadow: 0 0 12px #818cf8;
+        }
+        .button:hover {
+            background-color: #4f46e5;
+        }
+        .mypic {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 3px solid #a0a0ff;
+            margin-bottom: 15px;
+            object-fit: cover;
+            box-shadow: 0 0 10px #5c63ff;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <img class="mypic" src="oig4 (1).jpeg" alt="Zahra's graphical pic">
+        <h2>Dr. Zahra Nazari</h2>
+        <p><em>Scientific Writer ✍️| Graphical Designer 🎨</em></p>
+        <p>Web Developer 💻| Photographer📸</p>
+        <p class="highlight">Student at Code To Inspire</p>
+        <a href="https://x.com/Zahrana70554346" class="button" target="_blank">Follow me on X</a>
+    </div>
+</body>
+</html>
